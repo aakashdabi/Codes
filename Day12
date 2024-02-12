@@ -1,0 +1,15 @@
+public class DailyCode {
+  public static int missingNum(int arr[]){
+    int n=arr.length;
+    int sum=(n*(n+1))/2;
+    int Sum2=0;
+    for(int i=0; i<n; i++){
+      Sum2+=arr[i];
+    }
+    return sum-Sum2;
+  }
+    public static void main(String[] args) {
+    int arr[]={0,5,3,2,9,1,6,8,4};
+    System.out.println(missingNum(arr));
+  }
+}
