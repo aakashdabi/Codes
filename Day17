@@ -1,0 +1,16 @@
+import java.util.HashSet;
+
+public class DailyCode{
+public static void main(String[] args) {
+    String str="aaaabbbbcccd";
+    StringBuilder newStr=new StringBuilder("");
+    HashSet<Character> hs=new HashSet<>();
+    for(int i=str.length()-1; i>=0; i--){
+        hs.add(str.charAt(i));
+    }
+    for(Character ch: hs){
+        newStr.append(ch);
+    }
+    System.out.println(newStr);
+}
+}
