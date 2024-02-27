@@ -1,0 +1,14 @@
+public class DailyCode {
+
+    // write recursive funtion to calculate the sum of digits of a positive integer
+    public static int Sum(int num){
+    if(num==0)
+    return 0;
+        
+    return(num%10 +Sum(num/10));
+    }
+    public static void main(String[] args) {
+      int num=123456;
+      System.out.println(Sum(num));
+    }
+}
