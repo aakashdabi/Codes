@@ -1,0 +1,15 @@
+public class DailyCode {
+
+    public static int Sum(int arr[], int sum, int i){
+        if(i==arr.length){
+            return 0;
+        }
+
+        sum=arr[i]+Sum(arr, sum, i+1);
+        return sum;
+    }
+    public static void main(String[] args) {
+      int arr[]={3,6,3,8,9,382};
+      System.out.println(Sum(arr,0,0));
+    }
+}
