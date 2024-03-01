@@ -1,0 +1,14 @@
+
+public class DailyCode{
+    public static void main(String[] args) {
+        Scanner sc =new Scanner(System.in);
+        System.out.print("Name: ");
+        String Name=sc.nextLine();
+
+        System.out.print("Feadback: ");
+        String feadback=sc.nextLine();
+        System.out.println();
+        System.out.println("Dear "+Name+",");
+        System.out.println("Thank you for sharing your feedback. We're delighted to hear about your positive experience and the valuable lessons you've gained during the 30 Days of Code challenge. Your dedication and enthusiasm have been inspiring. Farewell and best wishes for your future coding endeavors!");
+    }
+}
