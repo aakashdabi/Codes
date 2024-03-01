@@ -1,0 +1,19 @@
+class dailyCode {
+    public static int[] twoSum(int[] nums, int target) {
+        for(int i=1; i<nums.length; i++){
+            for (int j=0 ; i+j<nums.length; j++){
+                if(nums[i+j]+nums[j] == target){
+                   return new int[] {i+j,j} ;
+                }
+            }
+        }
+        return new int[] {};
+    }
+    public static void main(String args[]){
+        int nums[]={2,17,7,15};
+        int target=9;
+        int index[]=twoSum(nums, target);
+        System.out.print("["+index[0]+","+index[1]+"]");
+
+    }
+}
